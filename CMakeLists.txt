@@ -38,8 +38,9 @@ endif()
 
 if(DEBUG)
   message(STATUS "NITRO DEBUG IS ON")
-  add_compile_definitions(ALLOW_ALL_CORS)
 endif()
+
+add_compile_definitions(ALLOW_ALL_CORS)
 
 if(NOT DEFINED NITRO_VERSION)
   set(NITRO_VERSION "default_version")
